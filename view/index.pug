@@ -4,6 +4,16 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.css", type="text/css")
         title Weather
     body 
-        h1 Hello World 
+        article.widget
+            .weatherIcon
+                i.wi.wi-day-cloudy
+            .weatherInfo
+                .temperature
+                    span 25&deg;
+                .description
+                    .weatherCondition CLOUDY
+                    .place New York, New York
+            .date 1st Jan
