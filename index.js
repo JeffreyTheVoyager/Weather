@@ -13,10 +13,11 @@ app.set('views', viewPath)
 app.set('view engine', 'pug')
 app.use(express.static(viewPath))
 
+// Router
 
-app.get('/', (req, res)=>{
-    res.render('index')
-})
+/* Home */
+const homeRouterPath = path.join(__dirname, '/routers/home/home.js')
+app.use('/', require(homeRouterPath))
 
 app.listen(process.env.PORT, ()=>{
     console.log("Server Successful");
