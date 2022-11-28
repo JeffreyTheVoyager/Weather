@@ -74,15 +74,15 @@ body {
   height: 60%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background: #FAFAFA;
+  background: #0daa25;
   font-family: weathericons;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 100px;
 }
-.widget .weatherIcon i {
+.widget .weatherIcon img {
   padding-top: 30px;
+  width: 30%;
 }
 .widget .weatherInfo {
   flex: 0 0 70%;

@@ -16,11 +16,11 @@ html(lang="en")
             
         article.widget
             .weatherIcon
-                i.wi.wi-day-cloudy
+                img(src=`http://openweathermap.org/img/wn/${icon}@2x.png`, alt="Weather Icon")
             .weatherInfo
                 .temperature
                     span #{temp}&deg;
                 .description
                     .weatherCondition #{description}
                     .place #{city}
-            .date 1st Jan
+            .date #{date}

@@ -83,15 +83,15 @@ color : #2f3640;
     height: 60%;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
-    background: #FAFAFA;
+    background: #0daa25;
     font-family: weathericons;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 100px;
     
-    i{
+    img{
       padding-top: 30px;
+      width: 30%;
     }
   }
   
