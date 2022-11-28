@@ -8,9 +8,9 @@ html(lang="en")
         link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200')
         title Weather
     body
-        form(action="#", method="post") 
+        form(action="/", method="post") 
             .searchBox
-                input.searchInput(type='text' name='' placeholder='City')
+                input.searchInput(type='text' name='city' placeholder='City')
                 button.searchButton(href='#')
                     span.material-symbols-outlined search
             
@@ -19,8 +19,8 @@ html(lang="en")
                 i.wi.wi-day-cloudy
             .weatherInfo
                 .temperature
-                    span 25&deg;
+                    span #{temp}&deg;
                 .description
-                    .weatherCondition CLOUDY
-                    .place New York, New York
+                    .weatherCondition #{description}
+                    .place #{city}
             .date 1st Jan
